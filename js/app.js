@@ -1,6 +1,4 @@
-console.log("Teste");
-
-fetch("https://backloggd.com/u/Rafakkj0/rss/")
+fetch("https://backloggd.com/u/Rafakkj0/reviews/rss/")
     .then(response => response.text())
     .then(data => {
         console.log(data);
