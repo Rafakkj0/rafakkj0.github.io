@@ -1,4 +1,5 @@
-console.log("Site carregado.");
+console.log("Teste");
+
 fetch("https://backloggd.com/u/Rafakkj0/rss/")
     .then(response => response.text())
     .then(data => {
