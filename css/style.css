@@ -5,29 +5,22 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: white;
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
+    font-family: sans-serif;
+    background-color: #161616;
+    color:white;
 }
 
-header{
-    text-align: center;
-    margin-bottom: 40px;
+.janela1{
+    background-color: #c0c0c0;
 }
 
-header img{
+.janela>div:first-child{
+    
+}
+
+.janela1 img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-}
-
-section{
-    margin-bottom: 40px;
-}
-
-h2{
-    margin-bottom: 10px;
+    margin: 30px;
 }
