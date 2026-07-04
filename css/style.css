@@ -1,26 +1,137 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    image-rendering: pixelated;
 }
 
-body{
-    font-family: sans-serif;
-    background-color: #161616;
-    color:white;
+.tela{
+    display: flex;
+    justify-content: center; /* Centraliza na horizontal */
+    width: 100vw;            /* Ocupa toda a largura da tela */
+    height: 100vh;           /* Ocupa toda a altura da tela */
+    background-color: #1e1e20;
 }
 
-.janela1{
-    background-color: #c0c0c0;
+.janela{
+    flex: 0 1 1000px;
+    font-family: "Jersey 10", sans-serif;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 10px;
 }
 
-.janela>div:first-child{
-    
+.sobre_mim{
+    flex: 0 0 40%;
 }
 
-.janela1 img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 30px;
+.sobre_mim>.window-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.sobre_mim .nome{
+    text-align: center;
+    font-size: 35px;
+}
+
+.sobre_mim .icon{
+    background: url(/img/icon.jpg);
+    background-size: cover;
+    width: 40%;
+    aspect-ratio: 1/1;
+    margin-top: 10px;
+    transform: rotate(3deg);
+}
+
+.redes{
+    flex: 1;
+    min-width: 0;
+}
+
+.redes>.window-body{
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes .sub-janela{
+    border-top: 3px #f9f7ee solid;
+    border-bottom: 3px #a09d92 solid;
+    border-left: 3px #f9f7ee solid;
+    border-right: 3px #a09d92 solid;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes .nome{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.redes .icon{
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    margin-top: 5px;
+}
+
+.discord{
+    background: url(/img/discord.png);
+}
+
+.steam{
+    background: url(/img/steam.png);
+}
+
+.backloggd{
+    background: url(/img/backloggd.png);
+}
+
+.youtube{
+    background: url(/img/youtube.png);
+}
+
+.github{
+    background: url(/img/github.png);
+}
+
+.redes .sub-janela .botao{
+    border-top: 2px #f9f7ee solid;
+    border-bottom: 2px #a09d92 solid;
+    border-left: 2px #f9f7ee solid;
+    border-right: 2px #a09d92 solid;
+    margin: 5px;
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+/* Alvo específico para o ícone de abrir link na Steam */
+.redes .sub-janela .botao .material-icons {
+    font-size: 16px; /* Ajuste esse valor para o tamanho que achar melhor */
+    vertical-align: middle; /* Alinha o ícone verticalmente com a palavra "Ir" */
+    margin-left: 4px; /* Dá um espacinho entre o texto e o ícone */
+}
+
+.linhaDeDivisao{
+    width: 90%;
+    border: 1px #000 solid;
+    margin: 10px 0;
+}
+
+.version{
+    position: fixed;
+    color: white;
+    bottom: 5px;
+    right: 5px;
+    font-size: 20px;
+}
+
+@media (max-width: 700px){
+    .tela{
+        background: red;
+    }
 }
